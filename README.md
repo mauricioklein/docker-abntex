@@ -1,9 +1,9 @@
-# narf/latex
+# mauricioklein/abntex
 
-Docker container for LaTeX to PDF generation.
+Docker container with ABNTex support.
 
 ## USAGE
 
-`docker pull narf/latex`
+`docker pull mauricioklein/abntex`
 
-`docker run -i narf/latex < ~/invoice-alternate.latex > invoice.pdf`
+`docker run -i mauricioklein/abntex < ~/invoice-alternate.latex > invoice.pdf`
