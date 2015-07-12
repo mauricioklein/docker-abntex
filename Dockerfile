@@ -1,12 +1,10 @@
-FROM ubuntu:14.04
-MAINTAINER Nat Lownes <nat.lownes@gmail.com>
+FROM ubuntu:latest
+MAINTAINER Mauricio Klein <mauricio.klein.msk@gmail.com>
 
 RUN apt-get update
 
 RUN apt-get install -y \
-    texlive-latex-base texlive-xetex latex-xcolor texlive-math-extra \
-    texlive-latex-extra texlive-fonts-extra \
-    curl wget git fontconfig make
+    abntex curl wget git fontconfig make
 RUN apt-get install -y uuid-runtime
 
 ADD process.bash /root/
