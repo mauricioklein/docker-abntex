@@ -6,4 +6,4 @@ Docker container with ABNTex support.
 
 `docker pull mauricioklein/abntex`
 
-`docker run -i mauricioklein/abntex < ~/invoice-alternate.latex > invoice.pdf`
+`docker run -i mauricioklein/abntex < [tex input file] > [pdf output file]
