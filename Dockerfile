@@ -1,7 +1,13 @@
 FROM ubuntu:latest
 MAINTAINER Mauricio Klein <mauricio.klein.msk@gmail.com>
 
-RUN apt-get update && apt-get install -y texlive-full uuid-runtime
+RUN apt-get update && \
+  apt-get install -y \
+  texlive-publishers \
+  texlive-lang-portuguese \
+  texlive-latex-extra \
+  texlive-fonts-recommended \
+  uuid-runtime
 
 ADD process.bash /root/
 RUN chmod +x /root/process.bash
