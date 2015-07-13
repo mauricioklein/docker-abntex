@@ -7,6 +7,7 @@ RUN apt-get update && \
   texlive-lang-portuguese \
   texlive-latex-extra \
   texlive-fonts-recommended \
+  abntex \
   uuid-runtime
 
 ADD process.bash /root/
