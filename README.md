@@ -1,9 +1,14 @@
-# mauricioklein/abntex
+# mauricioklein/docker-abntex
 
-Docker container with ABNTex support.
+Docker image with support to ABNTex.
 
 ## USAGE
 
+### Pull image from DockerHub:
+`docker pull mauricioklein/abntex`
+
+### ... or build directly from Dockerfile:
 `docker build -t mauricioklein/abntex .`
 
-`docker run -i mauricioklein/abntex < [tex input file] > [pdf output file]
+### To process your texfile and generate the output PDF:
+`docker run -i mauricioklein/abntex < [tex input file] > [pdf output file]`
